@@ -10,18 +10,18 @@
 
         body {
             font-family: 'Inter', sans-serif;
+            max-width: 1400px;
+            margin: 60px auto;
+            padding: 0 20px;
             background: white;
             color: #111;
             text-align: center;
-            margin: 20px auto;
-            padding: 0;
         }
 
         h1 {
             font-size: 2rem;
             font-weight: 400;
             letter-spacing: -0.03em;
-            margin-top: 30px;
             margin-bottom: 8px;
         }
 
@@ -29,19 +29,17 @@
             font-size: 0.95rem;
             font-weight: 300;
             color: #666;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
-        .artwork {
+        img {
+            height: auto;
             display: block;
-            height: 90vh;
-            width: auto;
-            max-width: 95vw;
-            margin: 20px auto;
+            margin: 70px auto;
         }
 
         .favorite-section {
-            margin-top: 80px;
+            margin-top: 120px;
             margin-bottom: 80px;
         }
 
@@ -49,7 +47,7 @@
             font-size: 1rem;
             font-weight: 400;
             letter-spacing: 0.02em;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .favorite-caption {
@@ -59,12 +57,10 @@
             margin-bottom: 30px;
         }
 
-        .favorite-photo {
-            display: block;
-            height: 60vh;
-            width: auto;
-            max-width: 90vw;
-            margin: 0 auto;
+        @media (max-width: 768px) {
+            img {
+                max-width: 95% !important;
+            }
         }
     </style>
 </head>
@@ -75,17 +71,17 @@
 
     <p class="subtitle">Examples of Work</p>
 
-    <img src="art1.jpg" class="artwork">
+    <img src="art1.jpg" style="max-width:70%;">
 
-    <img src="art2.jpg" class="artwork">
+    <img src="art2.png" style="max-width:45%;">
 
-    <img src="art3.jpg" class="artwork">
+    <img src="art3.jpg" style="max-width:48%;">
 
-    <img src="art4.jpg" class="artwork">
+    <img src="art4.jpg" style="max-width:68%;">
 
-    <img src="art5.jpg" class="artwork">
+    <img src="art5.jpg" style="max-width:70%;">
 
-    <img src="art6.jpg" class="artwork">
+    <img src="art6.jpg" style="max-width:48%;">
 
     <div class="favorite-section">
 
@@ -95,7 +91,7 @@
             Created over the course of two years and gifted to my grandfather
         </p>
 
-        <img src="grandpa.jpg" class="favorite-photo">
+        <img src="grandpa.jpg" style="max-width:55%;">
 
     </div>
 
