@@ -10,7 +10,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 80px auto;
             padding: 0 30px;
             background: white;
@@ -29,18 +29,7 @@
             font-size: 0.95rem;
             font-weight: 300;
             color: #666;
-            margin-bottom: 80px;
-        }
-
-        .artwork {
-            display: block;
-            max-width: 65%;
-            height: auto;
-            margin: 70px auto;
-        }
-
-        .favorite-section {
-            margin-top: 140px;
+            margin-bottom: 90px;
         }
 
         h2 {
@@ -57,11 +46,12 @@
             margin-bottom: 40px;
         }
 
-        .favorite-photo {
-            display: block;
-            max-width: 50%;
+        img {
             height: auto;
-            margin: 0 auto;
+        }
+
+        .favorite-section {
+            margin-top: 140px;
         }
     </style>
 </head>
@@ -72,27 +62,36 @@
 
     <p class="subtitle">Selected works.</p>
 
-    <img src="art1.jpg" class="artwork">
+    <!-- Change the percentages to resize each artwork -->
 
-    <img src="art2.jpg" class="artwork">
+    <img src="art1.jpg"
+         style="max-width:65%; display:block; margin:70px auto;">
 
-    <img src="art3.jpg" class="artwork">
+    <img src="art2.jpg"
+         style="max-width:65%; display:block; margin:70px auto;">
 
-    <img src="art4.jpg" class="artwork">
+    <img src="art3.jpg"
+         style="max-width:65%; display:block; margin:70px auto;">
 
-    <img src="art5.jpg" class="artwork">
+    <img src="art4.jpg"
+         style="max-width:65%; display:block; margin:70px auto;">
 
-    <img src="art6.jpg" class="artwork">
+    <img src="art5.jpg"
+         style="max-width:65%; display:block; margin:70px auto;">
+
+    <img src="art6.jpg"
+         style="max-width:65%; display:block; margin:70px auto;">
 
     <div class="favorite-section">
 
-        <h2>My Favorite Completed Piece</h2>
+        <h2>A Personal Favorite</h2>
 
         <p class="favorite-caption">
             Created over the course of two years and gifted to my grandfather.
         </p>
 
-        <img src="grandpa.jpg" class="favorite-photo">
+        <img src="grandpa.jpg"
+             style="max-width:45%; display:block; margin:0 auto;">
 
     </div>
 
